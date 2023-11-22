@@ -29,8 +29,7 @@ Links to the datasets:
 Before you start, ensure you have the following prerequisites:
 
 - Cuda compatible GPU recommended, but CPU is also supported
-  - Minimum Cuda compatibility: 5.0 (Maxwell), Ampere or newer recommended
-  - Kepler (3.5, 3.7) only partily compatible, if you compile PyTorch etc. for yourself --> I will make wheels available soon for cuda comaptiblity >=3.5
+  - Minimum Cuda compatibility: 3.5 (Kepler), Ampere or newer recommended
   - Your GPU needs at least 10GB of VRAM for the default batch_size while training a textmodel (CNN and RNN (LSTM)), you can decrease the batch_size to use GPUs with less VRAM
     
 - Python Libraries:
