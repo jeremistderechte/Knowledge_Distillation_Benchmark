@@ -1,6 +1,11 @@
 # Benchmark to test the capabilities of knowledge distillation
 
-The neurlan networks of this benchmark are written with tensorflow, a version ported to PyTorch follows soon. The benchmark will test the performance of different teacher and studentmodels and log the results.
+The neurlan networks of this benchmark are written with tensorflow, a version ported to PyTorch follows soon. The benchmark will test the performance of different teacher and studentmodels and log the results. The Benchmarks trains a simple ReluNet on the Mandelbrot Dataset and a CNN and RNN with an amazon review dataset. 
+
+Links to the datasets:
+- Mandelbrot: (build own code)
+- Amazon: 
+
 
 ## Table of Contents
 
@@ -24,9 +29,10 @@ The neurlan networks of this benchmark are written with tensorflow, a version po
 Before you start, ensure you have the following prerequisites:
 
 - Cuda compatible GPU recommended, but CPU is also supported
-  - Minimum Cuda compatibility: 5.0 (Maxwell), Ampere or newer recommended ()
-  - Kepler (3.5, 3.7) only partily compatible, if you compile PyTorch etc. for yourself (sorry K20, K40, K80 Owners :-() --> I will make wheels available soon for cuda comaptiblity >=3.5
+  - Minimum Cuda compatibility: 5.0 (Maxwell), Ampere or newer recommended
+  - Kepler (3.5, 3.7) only partily compatible, if you compile PyTorch etc. for yourself --> I will make wheels available soon for cuda comaptiblity >=3.5
   - Your GPU needs at least 10GB of VRAM for the default batch_size while training a textmodel (CNN and RNN (LSTM)), you can decrease the batch_size to use GPUs with less VRAM
+    
 - Python Libraries:
   - wandb
   - tensorflow
